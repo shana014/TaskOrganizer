@@ -7,12 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>TaskOrganizer Project Initialized 🚀</h1>
-        <p>Your local environment is up and running.</p>
+    <div id="app" class="layout-container">
+        <aside class="sidebar">
+            <h2>TaskOrganizer 🚀</h2>
+            <nav>
+                <ul>
+                    <li class="active">📅 Today</li>
+                    <li>📥 Tasks</li>
+                    <li>🗓️ Upcoming</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="content-header">
+                <h1>My Tasks</h1>
+                <button class="btn-primary">+ Add Task</button>
+            </header>
+            <section class="task-list" id="taskList">
+                <p class="empty-state">No tasks for today. Relax! ☕</p>
+            </section>
+        </main>
     </div>
-
-    <!-- Our JavaScript File -->
     <script src="app.js"></script>
 </body>
 </html>
